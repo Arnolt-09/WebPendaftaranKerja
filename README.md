@@ -1,1 +1,0 @@
-# kumpulan halaman majalah asik
