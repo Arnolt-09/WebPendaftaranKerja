@@ -1,0 +1,236 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 35px; /* sama seperti di Home */
+}
+
+.logo span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #4da6ff;
+}
+
+nav a.logout {
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.profile:hover {
+  opacity: 0.8;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+
+/* LOGIN FORM */
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* jarak antara teks dan logo */
+}
+
+.login-container h2 img {
+  height: 2em;   /* mengikuti tinggi teks */
+  width: auto;
+  vertical-align: middle;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+label {
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"]#password {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+}
+
+
+input::placeholder {
+  color: #ddd;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.show-password input[type="checkbox"] {
+  accent-color: #1e90ff;
+}
+
+button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* LOGIN FORM */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* isi ke tengah horizontal */
+  justify-content: flex-start;
+  margin-top: 50 px;      /* biar agak turun */
+  text-align: center;
+}
+
+.login-container h2 {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;   /* jarak ke form */
+}
+
+.login-container h2 img {
+  height: 2em;
+  width: auto;
+  vertical-align: middle;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;   /* batasi biar rapih */
+  gap: 20px;
+}
+
+/* LINK BUAT AKUN */
+.register-link {
+  display: flex;
+  justify-content: flex-start; /* rata kiri biar sejajar dengan Show Password */
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.register-link span {
+  color: #fff;
+}
+
+.register-link .btn-register {
+  background-color: transparent;
+  border: 1px solid #1e90ff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.register-link .btn-register:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}

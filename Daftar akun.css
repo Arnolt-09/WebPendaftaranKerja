@@ -1,0 +1,147 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Register Container */
+.register-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.register-container h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.register-container h2 img {
+  height: 1em;
+  vertical-align: middle;
+}
+
+/* Form */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.register-container label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.register-container input::placeholder {
+  color: #aaa;
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* Button */
+.btn-register {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}

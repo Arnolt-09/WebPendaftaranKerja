@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Akun - LokerKU</title>
+  <link rel="stylesheet" href="Daftar akun.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="LOGO KERJAKU.png" alt="Logo"> <span>LokerKU</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="Home.html">Beranda</a></li>
+        <li><a href="CariPekerjaan.html">Cari Pekerjaan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Register Form -->
+  <div class="register-container">
+    <h2>Daftar ke <img src="LOGO KERJAKU.png" alt="Logo"> LokerKU</h2>
+    <form>
+      <label for="fullname">Nama Lengkap</label>
+      <input type="text" id="fullname" placeholder="Masukkan nama lengkap anda" required>
+
+      <label for="email">Email Anda</label>
+      <input type="email" id="email" placeholder="Masukkan email anda" required>
+
+      <label for="password">Kata Sandi</label>
+      <input type="password" id="password" placeholder="Masukkan kata sandi anda" required>
+
+      <label for="confirm-password">Konfirmasi Kata Sandi</label>
+      <input type="password" id="confirm-password" placeholder="Masukkan kembali kata sandi anda" required>
+
+      <div class="show-password">
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Show Password</label>
+      </div>
+
+      <button type="submit" class="btn-register">Daftar</button>
+    </form>
+
+    <div class="login-link">
+      <span>Sudah punya akun?</span>
+      <a href="Login.html">Masuk</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Tentang Kami</a>
+      <a href="#">Hubungi Kami</a>
+      <a href="#">Kebijakan Privasi</a>
+    </div>
+    <p>LokerKU ©copyright2025</p>
+  </footer>
+
+  <script>
+    // Show/Hide password
+    const checkbox = document.getElementById("showPassword");
+    const pass = document.getElementById("password");
+    const confirmPass = document.getElementById("confirm-password");
+
+    checkbox.addEventListener("change", () => {
+      const type = checkbox.checked ? "text" : "password";
+      pass.type = type;
+      confirmPass.type = type;
+    });
+  </script>
+</body>
+</html>

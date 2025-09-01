@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+/* HEADER */
+header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.logo span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #4da6ff;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+
+/* Logo Perusahaan */
+.company-logo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.company-logo img {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* About */
+.about, .job, .requirements {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about h2, .job h2, .requirements h2 {
+    margin-bottom: 15px;
+}
+
+/* Requirements */
+.requirements ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.requirements ul li {
+    margin-bottom: 10px;
+}
+
+/* Button */
+.apply-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk - LokerKU</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+  <div class="logo">
+    <img src="LOGO KERJAKU.png" alt="Logo LokerKU">
+    <span>LokerKU</span>
+  </div>
+
+  <div class="header-right">
+    <nav>
+      <a href="Home.html">Beranda</a>
+      <a href="#">Cari Pekerjaan</a>
+    </nav>
+    <a href="profile.html" class="profile">
+      <img src="img/user.png" alt="User"> 
+      <span>User</span>
+    </a>
+  </div>
+</header>
+
+  <!-- FORM LOGIN -->
+  <main class="login-container">
+   <h2>Masuk ke <img src="LOGO KERJAKU.png" alt="Logo"><b>LokerKU</b>
+</h2>
+
+    <form>
+  <label>Email</label>
+  <input type="email" placeholder="Masukan Email anda" required>
+
+  <label>Kata Sandi</label>
+  <input type="password" id="password" placeholder="Masukan kata sandi anda" required>
+
+  <div class="show-password">
+    <input type="checkbox" id="showPass">
+    <label for="showPass">Show Password</label>
+  </div>
+
+  <!-- Tambahan bagian Buat Akun -->
+  <div class="register-link">
+    <span>Belum punya akun?</span>
+    <a href="Daftar akun.html" class="btn-register">Buat Akun</a>
+  </div>
+
+  <button type="submit">Masuk</button>
+</form>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Tentang Kami</a>
+      <a href="#">Hubungi Kami</a>
+      <a href="#">Kebijakan Privasi</a>
+    </div>
+    <p>LokerKU ©copyright2025</p>
+  </footer>
+
+  <script>
+    document.getElementById("showPass").addEventListener("change", function(){
+      const passField = document.getElementById("password");
+      passField.type = this.checked ? "text" : "password";
+    });
+  </script>
+
+</body>
+</html>
